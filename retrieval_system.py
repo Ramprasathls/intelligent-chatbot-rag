@@ -9,7 +9,7 @@ index = faiss.read_index("faq_index.faiss")
 faq_data = pd.read_csv("E:/intelligent-chatbot-rag/intelligent-chatbot-rag/faq_data_with_embeddings.csv")
 
 # Initialize the SentenceTransformer model
-model = SentenceTransformer('msmarco-distilbert-base-tas-b')
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
 def retrieve_question(user_query, top_k=3):
     """

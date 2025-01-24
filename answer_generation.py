@@ -14,7 +14,7 @@ faq_data = pd.read_csv("E:/intelligent-chatbot-rag/intelligent-chatbot-rag/faq_d
 retrieval_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Initialize the Hugging Face question-answering pipeline
-qa_model = pipeline("question-answering", model="bert-large-uncased-whole-word-masking-finetuned-squad")
+qa_model = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
 
 def retrieve_context(user_query, top_k=1):
     """
