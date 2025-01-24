@@ -8,7 +8,7 @@ data_path = "E:/intelligent-chatbot-rag/intelligent-chatbot-rag/data/preprocesse
 data = pd.read_csv(data_path)
 
 # Initialize the SentenceTransformer model
-model = SentenceTransformer('all-MiniLM-L6-v2')  # A lightweight and efficient model
+model = SentenceTransformer('msmarco-distilbert-base-tas-b')  # A better retrieval model
 
 # Generate embeddings for the Questions
 print("Generating embeddings...")
